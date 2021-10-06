@@ -1,0 +1,17 @@
+
+.info__box {
+    width: 60%;
+    margin: auto;
+    color: white;
+    text-align: justify;
+    @include responsive(phone) {
+        width: 80%;
+    }
+    &--animation{
+        animation: moveInBottom 1s ease-out 0.5s backwards;
+    }
+}
+
+.info__paragraph{
+    margin-top: 2rem;
+}

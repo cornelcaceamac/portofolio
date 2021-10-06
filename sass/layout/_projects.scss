@@ -1,0 +1,22 @@
+.projects {
+    min-height: 100vh;
+    &__title {
+        color: white;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    &__container {
+        max-width: 120rem;
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        @include responsive(tab-portrait) {
+            &--animation{
+                animation: zoomIn 1s ease-out 0.5s backwards;
+            }
+        }
+    }
+}

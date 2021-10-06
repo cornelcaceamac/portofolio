@@ -1,0 +1,30 @@
+.header {
+    position: relative;
+    height: 100vh;
+    background-color: $dark-gray;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+    @include responsive(tab-portrait) {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 10rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include responsive(phone) {
+            text-align: center;
+        }
+    }
+}

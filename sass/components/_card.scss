@@ -1,0 +1,89 @@
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    width: 55rem;
+    height: 31rem;
+    margin-bottom: 5rem;
+    
+    &__side{
+        width: 100%;
+        height: 100%;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &--back{
+            background-color: $dark-gray;
+            transform: rotateY(180deg);
+        }
+    }
+    
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    &__title {
+        text-align: center;
+        padding: 2rem;
+        color: white;
+    }
+
+    &__text {
+        color: white;
+        padding: 0 3rem;
+    }
+
+    &__logos {
+        height: 10rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-top: 2rem;
+    }
+}
+
+
+@include responsive(tab-portrait) {
+    .card{
+        height: 62rem;
+        &__side{
+            position: relative;
+            height: 50%;
+            &--back{
+                transform: rotateY(0deg);
+            }
+            &--front {
+                background-size: 95%;
+                background-color: $dark-gray;
+            }
+        }
+        &:hover &__side--front {
+            transform: rotateY(0deg);
+        }
+    }
+}
+
+
+@include responsive(small-phone) {
+    .card{
+        width: 90%;
+        height: 55rem;
+        &__side{
+            &--front {
+                height: 33%;
+            }
+            &--back {
+                height: 66%;
+            }
+        }
+    } 
+}

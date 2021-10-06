@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Cornel Caceamac - Portofolio Website</title>
+        <script async type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#info__box" class="navigation__link">About me</a></li>
+                    <li class="navigation__item"><a href="#skills__container" class="navigation__link">Skills</a></li>
+                    <li class="navigation__item"><a href="#projects__container" class="navigation__link">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header class="header">
+           <div class="header__logo-box">
+               <img src="img/logo.png" alt="Logo" class="header_logo">
+           </div>
+           <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Hi, I'm Cornel</span>
+                    <span class="heading-primary--sub">Full stack developer, technical support & ad operations specialist</span>
+                </h1>
+                <a href="#info__box" class="btn btn--white btn--animated">Find out more</a>
+           </div>
+        </header>
+        <section class="info">
+            <div class="info__box" id="info__box">
+                <p class="info__paragraph info__paragraph--title">A few words about me</p>
+                <p class="info__paragraph">It all started when I was in high school. Back then, programming looked like something scary and kind hard to spot it in your real life. Complex data structures and algorithms were all over the place and backtracking, divide et impera or oriented graphs were a pain for a young and unexperienced individual. Everything changed in college. At that point programming becamed something that looked like it has a real purpose. C++ becamed the key I needed to control different kind of robots and devices or to perform quality enhancement or watermarking algorithms on medical images. In college I've also discovered web development and I realised that's what I want to do next...</p>
+                <p class="info__paragraph">Like most web developers, I've started with HTML and CSS. I played around for a while and then I've discovered WordPress. At that point it felt like something new and interesting. I've created a few websites, most of them based on free themes and small code updates where I needed that. I've also started to learn SEO and after a while I've managed to create and maintain a few live websites that I owned at that point.</p>
+                <p class="info__paragraph">In 2015 I've decided to take a new challenge and become a member of the tech department at the company I'm still working for. Gemius is an international research and technology company providing data, as well as advanced tools for digital and traditional marketing activities such as web analytics, online campaigns’ management and ad serving. As a tech support, consultant and developer, I managed to help the clients get the maximum from Gemius products and also to help them integrate these products along with different other platforms and systems. We're talking about advertising, so the final goal was to create a tech stack that maximizes the revenue. Billions of sold ads later and dozens of happy clients I could say I've learned a lot.</p>
+                <p class="info__paragraph">Along with that, I've continued my freelancing experience and integrated a lot of new technoligies in my projects. My focus was on MERN Stack (MongoDB, ExpressJS, ReactJS, NodeJS), but that was just the backbone. I've also switched to SQL DBs if it was more suitable or use Angular, NextJS or ReactNative as an alternative for the front-end side. I'm also not a stranger for GraphQL way of doing things, TypeScript or microservices and I'm planning to include them on more projects, along with CI/CD pipelines that would make our lives easier.</p>
+                <p class="info__paragraph">I have a lot more to say, but it's just the beginning for long story with interesting challenges at every corner...</p>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="skills__container" id="skills__container">
+                <div class="skills__box">
+                    <div class="skills__icon" style="background-image: url('./img/icons/code.png')"></div>
+                    <div class="skills__list">
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-90">Frontend</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-80">Design</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-70">Backend</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-70">Databases</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-50">Mobile</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-40">Devops</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__box">
+                    <div class="skills__icon" style="background-image: url('./img/icons/support.png')"></div>
+                    <div class="skills__list">
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-90">Customer service</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-90">Troubleshooting</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-90">Problem solving</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-80">Testing</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-80">Integrations</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-70">Trainings</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__box">
+                    <div class="skills__icon" style="background-image: url('./img/icons/adops1.png')"></div>
+                    <div class="skills__list">
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-90">Ad servers</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-70">Real-time bidding</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-80">Video ads</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-70">Analytics</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-80">Scripting</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__progress skills__progress--col-80">Consultancy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <p class="projects__title">Some of my projects</p>
+            <div class="projects__container" id="projects__container">
+                <div class="card">
+                    <div class="card__side card__side--front" style="background-image: url('./img/projects/jtg.JPG');"></div>
+                    <div class="card__side card__side--back">
+                        <p class="card__title">Just Tech Guys</p>
+                        <p class="card__text">A job platform exclusively dedicated for tech specialists. It has some new and interesting features that would make the life easier for both recruiters or job seekers.</p>
+                        <div class="card__logos" style="background-image:url(./img/logos/jtg-logos.png)"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__side card__side--front" style="background-image: url('./img/projects/ce-mancam-azi.JPG');"></div>
+                    <div class="card__side card__side--back">
+                        <p class="card__title">Ce mancam azi</p>
+                        <p class="card__text">"What are going to eat today?" If this question comes up often in our mind, than you've found the right app to solve this problem.</p>
+                        <div class="card__logos" style="background-image:url(./img/logos/cma-logos.png)"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__side card__side--front" style="background-image: url('./img/projects/catalog.JPG');"></div>
+                    <div class="card__side card__side--back">
+                        <p class="card__title">Catalog Scolar Online</p>
+                        <p class="card__text">An online app developed for schools, with 5 different levels of authorization, that could come as an online extension for the classical registers from romanian schools.</p>
+                        <div class="card__logos" style="background-image:url(./img/logos/catalog-logos.png)"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__side card__side--front" style="background-image: url('./img/projects/qrmenu.jpg');"></div>
+                    <div class="card__side card__side--back">
+                        <p class="card__title">QR Menu</p>
+                        <p class="card__text">The app that replaces the old menu from your restaurant and make the life our the waiter easier. Everything is solved via some QR codes</p>
+                        <div class="card__logos" style="background-image:url(./img/logos/qr-logos.png)"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__logo"></div>
+                <div class="footer__links">
+                    <span><img src="./img/social/linkedin-min.png" alt="LinkedIn" width="30" height="30">cornel-caceamac-692050107</span>
+                    <span><img src="./img/social/mail-min.png" alt="Mail" width="30" height="30">caceamac.cornel@yahoo.com</span>
+                    <span><img src="./img/social/skype-min.png" alt="Skype" width="30" height="30">caceamac.cornel</span>
+                </div>
+            </div>
+            <p class="footer__text">@2021 - Cornel Caceamac - All rights reserved</p>
+        </footer>
+    </body>
+</html>
